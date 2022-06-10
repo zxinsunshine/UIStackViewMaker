@@ -1,0 +1,6 @@
+framework module UIStackViewMaker {
+  umbrella header "UIStackViewMaker-umbrella.h"
+
+  export *
+  module * { export * }
+}

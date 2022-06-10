@@ -1,0 +1,16 @@
+PODS:
+  - UIStackViewMaker (1.0)
+
+DEPENDENCIES:
+  - UIStackViewMaker (from `..`)
+
+EXTERNAL SOURCES:
+  UIStackViewMaker:
+    :path: ".."
+
+SPEC CHECKSUMS:
+  UIStackViewMaker: 7d08c13ee3a6f7ec981b8a9c9b1f0de9c673b204
+
+PODFILE CHECKSUM: 1145a48a9fa09f1e706ffcb8870f9d4a0ac411ef
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24F4A42253BBDFE161EB7F93538F5F88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		299D84156910591B01BFA743F1F9ADF3 /* UIStackViewMaker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B3DC267B003014D465A7ECD9105F409 /* UIStackViewMaker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F57601377C3A5D8FEAC7331FAD3E98B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		318E61316C6231EB3C6B12EF68142BEA /* UIStackView+STMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = E91A78048CFD81FC4448285D8AE7E1A3 /* UIStackView+STMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578AE5CEA38FA846A7A2BED1EB454D4B /* UIStackView+STMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BAED8866B74CABEB35DE836C0B85A4 /* UIStackView+STMaker.m */; };
+		6CFF864A409BEE1239343C0A730DD51A /* Pods-UIStackViewMakerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65408D809265DB28AE18240D5C75A93B /* Pods-UIStackViewMakerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96758EE80CE195FE2FD6F9E282F5D210 /* UIStackViewMaker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0EE887085323617DA28B575AB08FA /* UIStackViewMaker-dummy.m */; };
+		CE05879358A141D7B1F6E4E3AEEB20CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		DF635069D3E1C608DBDF1619D1598543 /* Pods-UIStackViewMakerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F71C9E814771BC25AEE10587C5305EED /* Pods-UIStackViewMakerDemo-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		841FE9755A029B8D955568630435AC2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EB413E3FADD6609D1D7A3A449DA6B95;
+			remoteInfo = UIStackViewMaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E1EC80A3AE61E07A78EC349E0B374B7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1A4506FBF31EAB8C84174FCA800B0FFC /* UIStackViewMaker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIStackViewMaker-prefix.pch"; sourceTree = "<group>"; };
+		1CB3D3AB07C8A8B16036AF69A93AB170 /* Pods-UIStackViewMakerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UIStackViewMakerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2ED0EE887085323617DA28B575AB08FA /* UIStackViewMaker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIStackViewMaker-dummy.m"; sourceTree = "<group>"; };
+		35630B885B3A04A57A239E3E8CBFA604 /* UIStackViewMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIStackViewMaker.release.xcconfig; sourceTree = "<group>"; };
+		65408D809265DB28AE18240D5C75A93B /* Pods-UIStackViewMakerDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UIStackViewMakerDemo-umbrella.h"; sourceTree = "<group>"; };
+		6A347C1927FA62AB41972C71F2BD551A /* UIStackViewMaker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UIStackViewMaker.modulemap; sourceTree = "<group>"; };
+		6CC0AD500BB2D94B250CE515FFC980CE /* UIStackViewMaker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = UIStackViewMaker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		83F8E69D295523DDA3A077D8DB7DAF38 /* Pods-UIStackViewMakerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UIStackViewMakerDemo.modulemap"; sourceTree = "<group>"; };
+		84BA4EE9362B93B24FC0846CA31C7230 /* Pods-UIStackViewMakerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIStackViewMakerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		8BE7A7FF482488398C45F86E04F5E939 /* Pods-UIStackViewMakerDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIStackViewMakerDemo-Info.plist"; sourceTree = "<group>"; };
+		9902EC5487A68F1FB258A36401E2AF02 /* UIStackViewMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIStackViewMaker.framework; path = UIStackViewMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A52B8A233B96EE616FB3A050CEE6ADE /* Pods_UIStackViewMakerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UIStackViewMakerDemo.framework; path = "Pods-UIStackViewMakerDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B3DC267B003014D465A7ECD9105F409 /* UIStackViewMaker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIStackViewMaker-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DD5CFFB1F51702F684E1D7793691F3E /* Pods-UIStackViewMakerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UIStackViewMakerDemo-frameworks.sh"; sourceTree = "<group>"; };
+		BAE720155958BB47402679F34ABCEBDE /* UIStackViewMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIStackViewMaker.debug.xcconfig; sourceTree = "<group>"; };
+		C0BAED8866B74CABEB35DE836C0B85A4 /* UIStackView+STMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIStackView+STMaker.m"; path = "UIStackViewMaker/UIStackView+STMaker.m"; sourceTree = "<group>"; };
+		CA63A7D51E4B455F8D9EF4ED340679E7 /* UIStackViewMaker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UIStackViewMaker-Info.plist"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D5AA08DFADB3738AE4AD55DEDD08C6BD /* Pods-UIStackViewMakerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIStackViewMakerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E91A78048CFD81FC4448285D8AE7E1A3 /* UIStackView+STMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIStackView+STMaker.h"; path = "UIStackViewMaker/UIStackView+STMaker.h"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F38047038181041FFF166DD0DAAE07D1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F71C9E814771BC25AEE10587C5305EED /* Pods-UIStackViewMakerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIStackViewMakerDemo-dummy.m"; sourceTree = "<group>"; };
+		FBF7A3A70A7C056AF45CCC1603719F88 /* Pods-UIStackViewMakerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIStackViewMakerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		941DC0FB813852E516445EA14ECE4AF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE05879358A141D7B1F6E4E3AEEB20CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A076506A30E26C16C9817F69EA690BAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F57601377C3A5D8FEAC7331FAD3E98B /* Foundation.framework in Frameworks */,
+				24F4A42253BBDFE161EB7F93538F5F88 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27C86FDA4C4B6726132E016BD4231E05 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F38047038181041FFF166DD0DAAE07D1 /* LICENSE */,
+				0E1EC80A3AE61E07A78EC349E0B374B7 /* README.md */,
+				6CC0AD500BB2D94B250CE515FFC980CE /* UIStackViewMaker.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2E93D5E62025DB0654A519706CFC672A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				601244A67C7F2E2F02F551092F74C1C3 /* Pods-UIStackViewMakerDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		349CC8D486827115D2F626C7FED46C59 /* UIStackViewMaker */ = {
+			isa = PBXGroup;
+			children = (
+				E91A78048CFD81FC4448285D8AE7E1A3 /* UIStackView+STMaker.h */,
+				C0BAED8866B74CABEB35DE836C0B85A4 /* UIStackView+STMaker.m */,
+				27C86FDA4C4B6726132E016BD4231E05 /* Pod */,
+				678A8D3993C7E5E6FD920715B60513D0 /* Support Files */,
+			);
+			name = UIStackViewMaker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		58E6517A0E30019733CF78FD59E77FBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A52B8A233B96EE616FB3A050CEE6ADE /* Pods_UIStackViewMakerDemo.framework */,
+				9902EC5487A68F1FB258A36401E2AF02 /* UIStackViewMaker.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		601244A67C7F2E2F02F551092F74C1C3 /* Pods-UIStackViewMakerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				83F8E69D295523DDA3A077D8DB7DAF38 /* Pods-UIStackViewMakerDemo.modulemap */,
+				1CB3D3AB07C8A8B16036AF69A93AB170 /* Pods-UIStackViewMakerDemo-acknowledgements.markdown */,
+				84BA4EE9362B93B24FC0846CA31C7230 /* Pods-UIStackViewMakerDemo-acknowledgements.plist */,
+				F71C9E814771BC25AEE10587C5305EED /* Pods-UIStackViewMakerDemo-dummy.m */,
+				9DD5CFFB1F51702F684E1D7793691F3E /* Pods-UIStackViewMakerDemo-frameworks.sh */,
+				8BE7A7FF482488398C45F86E04F5E939 /* Pods-UIStackViewMakerDemo-Info.plist */,
+				65408D809265DB28AE18240D5C75A93B /* Pods-UIStackViewMakerDemo-umbrella.h */,
+				FBF7A3A70A7C056AF45CCC1603719F88 /* Pods-UIStackViewMakerDemo.debug.xcconfig */,
+				D5AA08DFADB3738AE4AD55DEDD08C6BD /* Pods-UIStackViewMakerDemo.release.xcconfig */,
+			);
+			name = "Pods-UIStackViewMakerDemo";
+			path = "Target Support Files/Pods-UIStackViewMakerDemo";
+			sourceTree = "<group>";
+		};
+		678A8D3993C7E5E6FD920715B60513D0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A347C1927FA62AB41972C71F2BD551A /* UIStackViewMaker.modulemap */,
+				2ED0EE887085323617DA28B575AB08FA /* UIStackViewMaker-dummy.m */,
+				CA63A7D51E4B455F8D9EF4ED340679E7 /* UIStackViewMaker-Info.plist */,
+				1A4506FBF31EAB8C84174FCA800B0FFC /* UIStackViewMaker-prefix.pch */,
+				9B3DC267B003014D465A7ECD9105F409 /* UIStackViewMaker-umbrella.h */,
+				BAE720155958BB47402679F34ABCEBDE /* UIStackViewMaker.debug.xcconfig */,
+				35630B885B3A04A57A239E3E8CBFA604 /* UIStackViewMaker.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "UIStackViewMakerDemo/Pods/Target Support Files/UIStackViewMaker";
+			sourceTree = "<group>";
+		};
+		7815300D31F176F2EFFF12AB0A60628F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				349CC8D486827115D2F626C7FED46C59 /* UIStackViewMaker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				7815300D31F176F2EFFF12AB0A60628F /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				58E6517A0E30019733CF78FD59E77FBB /* Products */,
+				2E93D5E62025DB0654A519706CFC672A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B95649B27F1FFF545C4C7ED3E8FB58BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFF864A409BEE1239343C0A730DD51A /* Pods-UIStackViewMakerDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB687F9CEF62F9D113FCE0056B10A62D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318E61316C6231EB3C6B12EF68142BEA /* UIStackView+STMaker.h in Headers */,
+				299D84156910591B01BFA743F1F9ADF3 /* UIStackViewMaker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0EB413E3FADD6609D1D7A3A449DA6B95 /* UIStackViewMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 331A9827E11A8F758C6513F5881509FD /* Build configuration list for PBXNativeTarget "UIStackViewMaker" */;
+			buildPhases = (
+				FB687F9CEF62F9D113FCE0056B10A62D /* Headers */,
+				6BF80F357D2A9B20CB61D097C91209F1 /* Sources */,
+				A076506A30E26C16C9817F69EA690BAA /* Frameworks */,
+				A445FC900EA2BAFE30AD00ACA88ADB4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIStackViewMaker;
+			productName = UIStackViewMaker;
+			productReference = 9902EC5487A68F1FB258A36401E2AF02 /* UIStackViewMaker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		87283FFE1791A44F1742E9A45EBFB20F /* Pods-UIStackViewMakerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55D3EC49CD2CEB3D312FD75C00ED622D /* Build configuration list for PBXNativeTarget "Pods-UIStackViewMakerDemo" */;
+			buildPhases = (
+				B95649B27F1FFF545C4C7ED3E8FB58BD /* Headers */,
+				FA919177FBFFA36E8D0C724A3BAB4316 /* Sources */,
+				941DC0FB813852E516445EA14ECE4AF4 /* Frameworks */,
+				5C49796A45A9F913816F1F78DBAD159C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F30EA03D327D810914A1C860714C3C5 /* PBXTargetDependency */,
+			);
+			name = "Pods-UIStackViewMakerDemo";
+			productName = "Pods-UIStackViewMakerDemo";
+			productReference = 9A52B8A233B96EE616FB3A050CEE6ADE /* Pods_UIStackViewMakerDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 58E6517A0E30019733CF78FD59E77FBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87283FFE1791A44F1742E9A45EBFB20F /* Pods-UIStackViewMakerDemo */,
+				0EB413E3FADD6609D1D7A3A449DA6B95 /* UIStackViewMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C49796A45A9F913816F1F78DBAD159C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A445FC900EA2BAFE30AD00ACA88ADB4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BF80F357D2A9B20CB61D097C91209F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578AE5CEA38FA846A7A2BED1EB454D4B /* UIStackView+STMaker.m in Sources */,
+				96758EE80CE195FE2FD6F9E282F5D210 /* UIStackViewMaker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA919177FBFFA36E8D0C724A3BAB4316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF635069D3E1C608DBDF1619D1598543 /* Pods-UIStackViewMakerDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F30EA03D327D810914A1C860714C3C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIStackViewMaker;
+			target = 0EB413E3FADD6609D1D7A3A449DA6B95 /* UIStackViewMaker */;
+			targetProxy = 841FE9755A029B8D955568630435AC2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09909ECBA13E8F70A928465E7F7A9A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1BE07937FA09516E1327E5626EBBF7D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5AA08DFADB3738AE4AD55DEDD08C6BD /* Pods-UIStackViewMakerDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UIStackViewMakerDemo/Pods-UIStackViewMakerDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UIStackViewMakerDemo/Pods-UIStackViewMakerDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		21B26496956D931E4147D4079A5DACF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBF7A3A70A7C056AF45CCC1603719F88 /* Pods-UIStackViewMakerDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UIStackViewMakerDemo/Pods-UIStackViewMakerDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UIStackViewMakerDemo/Pods-UIStackViewMakerDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2DE0D8898245310716431F92FA4989FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8D368CFAEE295D63809CC7BCB88C78F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAE720155958BB47402679F34ABCEBDE /* UIStackViewMaker.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIStackViewMaker/UIStackViewMaker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIStackViewMaker/UIStackViewMaker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIStackViewMaker/UIStackViewMaker.modulemap";
+				PRODUCT_MODULE_NAME = UIStackViewMaker;
+				PRODUCT_NAME = UIStackViewMaker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E661B429738E1834CA01834F4AD0F3EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35630B885B3A04A57A239E3E8CBFA604 /* UIStackViewMaker.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIStackViewMaker/UIStackViewMaker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIStackViewMaker/UIStackViewMaker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIStackViewMaker/UIStackViewMaker.modulemap";
+				PRODUCT_MODULE_NAME = UIStackViewMaker;
+				PRODUCT_NAME = UIStackViewMaker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		331A9827E11A8F758C6513F5881509FD /* Build configuration list for PBXNativeTarget "UIStackViewMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D368CFAEE295D63809CC7BCB88C78F5 /* Debug */,
+				E661B429738E1834CA01834F4AD0F3EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09909ECBA13E8F70A928465E7F7A9A92 /* Debug */,
+				2DE0D8898245310716431F92FA4989FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55D3EC49CD2CEB3D312FD75C00ED622D /* Build configuration list for PBXNativeTarget "Pods-UIStackViewMakerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21B26496956D931E4147D4079A5DACF2 /* Debug */,
+				1BE07937FA09516E1327E5626EBBF7D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
