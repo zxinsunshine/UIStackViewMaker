@@ -1,16 +1,23 @@
 PODS:
+  - Masonry (1.1.0)
   - UIStackViewMaker (1.0)
 
 DEPENDENCIES:
+  - Masonry
   - UIStackViewMaker (from `..`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
 
 EXTERNAL SOURCES:
   UIStackViewMaker:
     :path: ".."
 
 SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   UIStackViewMaker: 7d08c13ee3a6f7ec981b8a9c9b1f0de9c673b204
 
-PODFILE CHECKSUM: 1145a48a9fa09f1e706ffcb8870f9d4a0ac411ef
+PODFILE CHECKSUM: 5676f97fda37fa3c4c0c336a297ca9a73b01a6aa
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3

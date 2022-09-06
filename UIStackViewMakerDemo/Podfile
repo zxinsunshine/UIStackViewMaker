@@ -6,5 +6,6 @@ target 'UIStackViewMakerDemo' do
   use_frameworks!
 
   pod 'UIStackViewMaker', :path => ".."
+  pod 'Masonry'
 
 end

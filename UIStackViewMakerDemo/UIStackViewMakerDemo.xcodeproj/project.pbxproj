@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1AAAFCE610BFE78375187402 /* Pods_UIStackViewMakerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA31774CA96697B503256D38 /* Pods_UIStackViewMakerDemo.framework */; };
+		5222731428C7477C00DF37E0 /* STTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5222731328C7477C00DF37E0 /* STTableViewCell.m */; };
+		5222731828C75CD000DF37E0 /* STMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5222731728C75CD000DF37E0 /* STMessageModel.m */; };
 		527F2568285309BA0022C23E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 527F2567285309BA0022C23E /* AppDelegate.m */; };
 		527F256B285309BA0022C23E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 527F256A285309BA0022C23E /* MainViewController.m */; };
 		527F256D285309BB0022C23E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527F256C285309BB0022C23E /* Assets.xcassets */; };
@@ -18,6 +20,11 @@
 /* Begin PBXFileReference section */
 		06C793857E5E5F8C57CAC8E2 /* Pods-UIStackViewMakerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIStackViewMakerDemo.debug.xcconfig"; path = "Target Support Files/Pods-UIStackViewMakerDemo/Pods-UIStackViewMakerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		291893120D54B6560C7459D2 /* Pods-UIStackViewMakerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIStackViewMakerDemo.release.xcconfig"; path = "Target Support Files/Pods-UIStackViewMakerDemo/Pods-UIStackViewMakerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5222731228C7477C00DF37E0 /* STTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STTableViewCell.h; sourceTree = "<group>"; };
+		5222731328C7477C00DF37E0 /* STTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STTableViewCell.m; sourceTree = "<group>"; };
+		5222731528C749AA00DF37E0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5222731628C75CD000DF37E0 /* STMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STMessageModel.h; sourceTree = "<group>"; };
+		5222731728C75CD000DF37E0 /* STMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STMessageModel.m; sourceTree = "<group>"; };
 		527F2563285309BA0022C23E /* UIStackViewMakerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIStackViewMakerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		527F2566285309BA0022C23E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		527F2567285309BA0022C23E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -86,6 +93,11 @@
 				527F256C285309BB0022C23E /* Assets.xcassets */,
 				527F256E285309BB0022C23E /* LaunchScreen.storyboard */,
 				527F2571285309BB0022C23E /* main.m */,
+				5222731228C7477C00DF37E0 /* STTableViewCell.h */,
+				5222731328C7477C00DF37E0 /* STTableViewCell.m */,
+				5222731528C749AA00DF37E0 /* PrefixHeader.pch */,
+				5222731628C75CD000DF37E0 /* STMessageModel.h */,
+				5222731728C75CD000DF37E0 /* STMessageModel.m */,
 			);
 			path = UIStackViewMakerDemo;
 			sourceTree = "<group>";
@@ -119,6 +131,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = ST;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					527F2562285309BA0022C23E = {
@@ -203,8 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5222731828C75CD000DF37E0 /* STMessageModel.m in Sources */,
 				527F2568285309BA0022C23E /* AppDelegate.m in Sources */,
 				527F2572285309BB0022C23E /* main.m in Sources */,
+				5222731428C7477C00DF37E0 /* STTableViewCell.m in Sources */,
 				527F256B285309BA0022C23E /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -325,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				GCC_PREFIX_HEADER = UIStackViewMakerDemo/PrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -367,6 +383,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				GCC_PREFIX_HEADER = UIStackViewMakerDemo/PrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

@@ -14,7 +14,7 @@ static const char * kIsArrangeReverseKey = "kIsArrangeReverseKey";
 static const CGFloat kItemTrailSpaceNone = -1;
 @interface STStackItem()
 
-@property (nonatomic, weak) UIView * itemView;
+@property (nonatomic, strong) UIView * itemView;
 @property (nonatomic, assign) CGFloat itemTrailSpace;
 
 @end
@@ -131,7 +131,7 @@ static const CGFloat kItemTrailSpaceNone = -1;
         if (!UIEdgeInsetsEqualToEdgeInsets(insets, self.stackView.layoutMargins)) {
             self.stackView.layoutMargins = insets;
         }
-        self.stackView.layoutMarginsRelativeArrangement = !UIEdgeInsetsEqualToEdgeInsets(insets, UIEdgeInsetsZero);        
+        self.stackView.layoutMarginsRelativeArrangement = !UIEdgeInsetsEqualToEdgeInsets(insets, UIEdgeInsetsZero);
         return self;
     };
 }
@@ -193,6 +193,7 @@ static const CGFloat kItemTrailSpaceNone = -1;
             [self setCustomSpacing:obj.itemTrailSpace afterView:obj.itemView];
         }
     }];
+    objc_setAssociatedObject(self, kIsArrangeReverseKey, @(NO), OBJC_ASSOCIATION_ASSIGN);
     return self;
 }
 
