@@ -121,7 +121,7 @@ static const CGFloat kAvatarWH = 50;
     }];
     
     self.avatarView.backgroundColor = isSender ? [UIColor blueColor] : [UIColor redColor];
-    self.nameLabel.text = isSender ? @"发送者:我" : @"发送者:TA";
+    self.nameLabel.text = isSender ? @"Me" : @"Author";
 }
 
 @end

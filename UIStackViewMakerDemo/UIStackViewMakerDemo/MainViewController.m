@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"Chat";
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.listView];
     [self.listView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -82,18 +82,25 @@
 - (NSMutableArray<STMessageModel *> *)messages {
     if (!_messages) {
         _messages = ({
+            NSArray<NSString *> * chatList = @[
+                @"Hello?",
+                @"在呢",
+                @"最近在忙些啥？好久没见你说话了。。。",
+                @"我最近在研究UIStackView的用法，总结出了一些有用的方案，设计了一个链式框架😄😄😄",
+                @"是么？叫什么名字？",
+                @"UIStackViewMaker",
+                @"这个怎么用？",
+                @"在github上可以检索到相关信息，里面有个Demo工程，主页上有使用说明，工程通过Pods下载即可",
+                @"好的，我去试试",
+                @"嗯嗯"
+            ];
             NSMutableArray * arr = [NSMutableArray array];
-            for (int i = 0; i < 100; ++i) {
+            [chatList enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 STMessageModel * model = [STMessageModel new];
-                model.isSender = (i % 2 == 0);
-                int messageCount = arc4random_uniform(50) + 20;
-                NSMutableString * str = [NSMutableString string];
-                for (int j = 0; j < messageCount; ++j) {
-                    [str appendString:[NSString stringWithFormat:@"%d", j]];
-                }
-                model.message = str;
+                model.isSender = (idx % 2 == 0);
+                model.message = obj;
                 [arr addObject:model];
-            }
+            }];
             arr;
         });
     }
