@@ -84,15 +84,15 @@
         _messages = ({
             NSArray<NSString *> * chatList = @[
                 @"Hello?",
-                @"在呢",
-                @"最近在忙些啥？好久没见你说话了。。。",
-                @"我最近在研究UIStackView的用法，总结出了一些有用的方案，设计了一个链式框架😄😄😄",
-                @"是么？叫什么名字？",
+                @"What's up?",
+                @"What are you doing recently? I haven't seen you speak for a long time。。。",
+                @"I recently studied the usage of uistackview, summarized some useful schemes, and designed a chain framework 😄😄😄",
+                @"really? What's the name of framework?",
                 @"UIStackViewMaker",
-                @"这个怎么用？",
-                @"在github上可以检索到相关信息，里面有个Demo工程，主页上有使用说明，工程通过Pods下载即可",
-                @"好的，我去试试",
-                @"嗯嗯"
+                @"How can I use this?",
+                @"You can retrieve relevant information on GitHub. There is a demo project in it. There are instructions on the home page. The project can be downloaded through pods",
+                @"OK, I'll try",
+                @"Uh huh. Okay"
             ];
             NSMutableArray * arr = [NSMutableArray array];
             [chatList enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
