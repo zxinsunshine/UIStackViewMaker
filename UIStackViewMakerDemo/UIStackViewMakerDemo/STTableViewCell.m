@@ -19,7 +19,7 @@ static const CGFloat kAvatarWH = 50;
 // item view
 @property (nonatomic, strong) UIImageView * avatarView;
 @property (nonatomic, strong) UILabel * nameLabel;
-@property (nonatomic, strong) UILabel * messageLabel;
+@property (nonatomic, strong) YYLabel * messageLabel;
 
 @end
 
@@ -40,6 +40,7 @@ static const CGFloat kAvatarWH = 50;
         UIImageView * view = [[UIImageView alloc] init];
         view.layer.cornerRadius = kAvatarWH / 2;
         view.clipsToBounds = YES;
+        view.alpha = 0.4;
         view;
     });
     
@@ -55,12 +56,14 @@ static const CGFloat kAvatarWH = 50;
     });
     
     self.messageLabel = ({
-        UILabel * label = [[UILabel alloc] init];
+        YYLabel * label = [[YYLabel alloc] init];
         label.textColor = [UIColor blackColor];
         label.textAlignment = NSTextAlignmentLeft;
         label.font = [UIFont systemFontOfSize:15];
         label.backgroundColor = [UIColor clearColor];
         label.numberOfLines = 0;
+        label.textContainerInset = UIEdgeInsetsMake(12, 16, 12, 16);
+        label.layer.cornerRadius = 13;
         label;
     });
     self.contentStackView = [[UIStackView.stMake stConfig:^(STStackViewConfig * _Nonnull config) {
@@ -81,6 +84,7 @@ static const CGFloat kAvatarWH = 50;
     [self.contentStackView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_lessThanOrEqualTo(300);
     }];
+    self.messageLabel.preferredMaxLayoutWidth = 300;
     self.alignStackView = [[UIStackView.stMake stConfig:^(STStackViewConfig * _Nonnull config) {
         config.stVer.stDistributeFill.stAlignLead.end();
     }] stGroupItems:^(STStackItemMaker * _Nonnull make) {
@@ -122,6 +126,7 @@ static const CGFloat kAvatarWH = 50;
     
     self.avatarView.backgroundColor = isSender ? [UIColor blueColor] : [UIColor redColor];
     self.nameLabel.text = isSender ? @"Me" : @"Author";
+    self.messageLabel.backgroundColor = isSender ? [UIColor greenColor] : [UIColor yellowColor];
 }
 
 @end

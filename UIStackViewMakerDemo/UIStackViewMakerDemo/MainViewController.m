@@ -97,7 +97,7 @@
             NSMutableArray * arr = [NSMutableArray array];
             [chatList enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 STMessageModel * model = [STMessageModel new];
-                model.isSender = (idx % 2 == 0);
+                model.isSender = (idx % 2 != 0);
                 model.message = obj;
                 [arr addObject:model];
             }];

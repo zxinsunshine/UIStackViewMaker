@@ -1,14 +1,17 @@
 PODS:
   - Masonry (1.1.0)
   - UIStackViewMaker (1.0)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
   - Masonry
   - UIStackViewMaker (from `..`)
+  - YYText
 
 SPEC REPOS:
   trunk:
     - Masonry
+    - YYText
 
 EXTERNAL SOURCES:
   UIStackViewMaker:
@@ -17,7 +20,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   UIStackViewMaker: 7d08c13ee3a6f7ec981b8a9c9b1f0de9c673b204
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 5676f97fda37fa3c4c0c336a297ca9a73b01a6aa
+PODFILE CHECKSUM: be966b3e917457680befa62c82578d3242715e59
 
 COCOAPODS: 1.11.3

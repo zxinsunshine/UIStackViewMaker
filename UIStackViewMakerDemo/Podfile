@@ -7,5 +7,6 @@ target 'UIStackViewMakerDemo' do
 
   pod 'UIStackViewMaker', :path => ".."
   pod 'Masonry'
+  pod 'YYText'
 
 end

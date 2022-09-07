@@ -9,5 +9,6 @@
 #define PrefixHeader_pch
 
 #import <Masonry/Masonry.h>
+#import <YYText/YYText.h>
 
 #endif /* PrefixHeader_pch */
