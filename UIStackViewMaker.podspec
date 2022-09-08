@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.source = {
         :git => 'https://github.com/zxinsunshine/UIStackViewMaker.git',
         :tag => s.version.to_s,
-        :branch => 'master'
+        :branch => 'main'
     }
 
     s.source_files = "UIStackViewMaker/*.{h,m,mm,swift}"
