@@ -40,6 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (STStackViewConfig *)stDistributeFill;
 
+- (STStackViewConfig *)stDistributeEqualFill;
+
 - (STStackViewConfig *)stDistributeEqual;
 
 - (STStackViewConfig *(^)(CGFloat space))stSpacing;

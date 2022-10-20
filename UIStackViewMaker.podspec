@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
     s.name             = "UIStackViewMaker"
-    s.version          = "1.0"
+    s.version          = "1.1"
     s.summary          = "UIStackView构造器"
     s.author           = { "Theo Though" => "zxinsunshine@126.com" }
 

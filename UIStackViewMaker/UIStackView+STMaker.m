@@ -114,6 +114,11 @@ static const CGFloat kItemTrailSpaceNone = -1;
     return self;
 }
 
+- (STStackViewConfig *)stDistributeEqualFill {
+    self.stackView.distribution = UIStackViewDistributionFillEqually;
+    return self;
+}
+
 - (STStackViewConfig *)stDistributeEqual {
     self.stackView.distribution = UIStackViewDistributionEqualSpacing;
     return self;
