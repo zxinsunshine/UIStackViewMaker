@@ -10,8 +10,7 @@ Pod::Spec.new do |s|
   
   s.source = {
     :git => 'https://github.com/zxinsunshine/UIStackViewMaker.git',
-    :tag => s.version.to_s,
-    :branch => 'main'
+    :tag => s.version.to_s
   }
   
   s.ios.deployment_target = '11.0'
